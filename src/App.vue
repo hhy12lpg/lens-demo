@@ -59,7 +59,7 @@
                       <line x1="0" :y1="h" :x2="isVirtual ? 320 : v" :y2="isVirtual ? h - (h/f)*320 : imgH" stroke="#F2C97D" stroke-width="1.5" />
                       <line v-if="isVirtual" x1="0" :y1="h" :x2="v" :y2="imgH" stroke="#70C0E8" stroke-width="1.5" stroke-dasharray="4,4" />
 
-                      <line :x1="-u" :y1="h" :x2="isVirtual ? 320 : v" :y2="isVirtual ? h - (h/u)*320 : imgH" stroke="#F2C97D" stroke-width="1.5" marker-end="url(#arrow-ray)" />
+                      <line :x1="-u" :y1="h" :x2="isVirtual ? 320 : v" :y2="isVirtual ?  - (h/u)*320 : imgH" stroke="#F2C97D" stroke-width="1.5" marker-end="url(#arrow-ray)" />
                       <line v-if="isVirtual" x1="0" y1="0" :x2="v" :y2="imgH" stroke="#70C0E8" stroke-width="1.5" stroke-dasharray="4,4" />
                     </g>
                     <g v-else>
